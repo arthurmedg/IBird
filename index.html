@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBird - Consulta de Aves</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <main class="container-vidro">
+        <header class="cabecalho">
+            <h1>Bem-Vindo ao IBird</h1>
+        </header>
+
+        <form id="formBusca">
+            <input type="text" id="inputRegiao" placeholder="Digite a Sigla da Região (Ex: BR, BR-SP, US)" required>
+            <button type="submit" class="btn-pesquisar">Pesquisar</button>
+        </form>
+
+        <div class="sugestoes-text">
+            <p>Exemplos rápidos:</p>
+        </div>
+        <div class="sugestoes">
+            <button type="button" class="btn-sugestoes" data-code="BR">📍 Brasil</button>
+            <button type="button" class="btn-sugestoes" data-code="BR-SP">📍 São Paulo</button>
+            <button type="button" class="btn-sugestoes" data-code="US">📍 EUA</button>
+        </div>
+
+        <div id="mensagemAviso" class="escondido"></div>
+    </main>
+
+    <section id="sessaoResultados" class="escondido container-vidro resultados">
+        <h2 id="tituloResultados">Resultados</h2>
+        <div id="gradeAves" class="grid-cards"></div>
+    </section>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
