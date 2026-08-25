@@ -1,4 +1,3 @@
-// Configurações da API
 const TOKEN_API = 'c29d4d78-8262-4afa-9809-0cc3912b13c3';
 const URL_BASE = 'https://api.ebird.org/v2/data/obs';
 
@@ -24,7 +23,6 @@ botoesSugestoes.forEach(botao => {
     });
 });
 
-// Função principal que conecta na API (Usando async/await)
 async function buscarAves(regiao) {
     if (!regiao) return;
 
